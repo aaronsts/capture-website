@@ -8,6 +8,7 @@ const StyledGlobal = createGlobalStyle`
     }
     body {
         background: #191919;
+        font-family: 'poppins', sans-serif;
 
     }
 
@@ -20,6 +21,7 @@ const StyledGlobal = createGlobalStyle`
         background: transparent;
         color: white;
         transition: all 0.5s ease;
+        font-family: 'poppins', sans-serif;
         &:hover{
             background-color: #23d997;
             color: white;
