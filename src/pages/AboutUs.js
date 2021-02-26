@@ -12,7 +12,7 @@ const AboutUs = () => {
             <FaqSection />
             
         </>
-    )
-}
+    );
+};
 
 export default AboutUs
