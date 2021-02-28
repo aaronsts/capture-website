@@ -2,8 +2,10 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import {titleAnimation, fade, photoAnim} from '../animation'
 
+
 // Images
 import home1 from '../img/home1.png';
+import Wave from './Wave';
 
 // Style
 import {StyledSection, StyledDescription, StyledImage, StyledHide} from '../styles' // import styled components
@@ -39,8 +41,10 @@ const AboutSection = () => {
             <StyledImage>
                 <motion.img variants={photoAnim} src={home1} alt='guy with camera'></motion.img>
             </StyledImage>
+            <Wave />
         </StyledSection>
     );
 };
+
 
 export default AboutSection
