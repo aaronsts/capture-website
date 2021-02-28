@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import {titleAnimation, fade, photoAnim} from '../animation'
 
 // Images
 import home1 from '../img/home1.png';
@@ -15,28 +16,28 @@ const AboutSection = () => {
                 <motion.div>
                     {/* Seperate title into smaller chunks so you can animate them */}
                     <StyledHide>
-                        <motion.h2 >
+                        <motion.h2 variants={titleAnimation}>
                             We work to make
                         </motion.h2>  {/* replace h2 tag with motion.h2 for framer-motion*/}
                     </StyledHide>
                     <StyledHide>
-                        <motion.h2 >
+                        <motion.h2 variants={titleAnimation}>
                             your <span>dreams</span> come
                         </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <motion.h2 >
+                        <motion.h2 variants={titleAnimation}>
                             true.
                         </motion.h2>
                     </StyledHide>
                 </motion.div>
-                <p>
+                <motion.p variants={fade}>
                     Contact us for any photography related ideas! We would love to hear it.
-                </p>
-                <button>Contact us</button>
+                </motion.p>
+                <motion.button variants={fade}>Contact us</motion.button>
             </StyledDescription>
             <StyledImage>
-                <img src={home1} alt='guy with camera'></img>
+                <motion.img variants={photoAnim} src={home1} alt='guy with camera'></motion.img>
             </StyledImage>
         </StyledSection>
     );
