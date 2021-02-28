@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 // Images
 import home1 from '../img/home1.png';
@@ -7,23 +8,28 @@ import home1 from '../img/home1.png';
 import {StyledSection, StyledDescription, StyledImage, StyledHide} from '../styles' // import styled components
 
 const AboutSection = () => {
+
     return (
         <StyledSection>
             <StyledDescription>
-                <div className="title">
+                <motion.div>
                     {/* Seperate title into smaller chunks so you can animate them */}
                     <StyledHide>
-                        <h2>We work to make</h2>
+                        <motion.h2 >
+                            We work to make
+                        </motion.h2>  {/* replace h2 tag with motion.h2 for framer-motion*/}
                     </StyledHide>
                     <StyledHide>
-                        <h2>
-                        your <span>dreams</span> come
-                        </h2>
+                        <motion.h2 >
+                            your <span>dreams</span> come
+                        </motion.h2>
                     </StyledHide>
                     <StyledHide>
-                        <h2>true.</h2>
+                        <motion.h2 >
+                            true.
+                        </motion.h2>
                     </StyledHide>
-                </div>
+                </motion.div>
                 <p>
                     Contact us for any photography related ideas! We would love to hear it.
                 </p>
