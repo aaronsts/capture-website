@@ -30,9 +30,10 @@ const StyledGlobal = createGlobalStyle`
     h2 {
         font-weight: lighter;
         font-size: 4rem;
+        color: whitesmoke;
     }
     h3 {
-        color: white;
+        color: whitesmoke;
     }
     h4 {
         font-weight:bold;
