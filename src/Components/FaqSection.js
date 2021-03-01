@@ -1,22 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import styled from 'styled-components';
-import {StyledSection} from '../styles'
+import {StyledSection} from '../styles';
+
+import Toggle from './Toggle';
 
 const FaqSection = () => {
     return (
         <StyledFaq>
             <h2>Any Questions? <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How do I Start</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officia.
-                    </p>
-                    <div className="faq-line"></div>
+            <Toggle> 
+                <div className="question">
+                    <h4>How do I Start</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officia.
+                            </p>       
+                        <div className="faq-line"></div>
+                    </div>
                 </div>
-            </div>
+            </Toggle>
+            <Toggle> 
             <div className="question">
                 <h4>Daily Schedule</h4>
                 <div className="answer">
@@ -27,6 +32,8 @@ const FaqSection = () => {
                     <div className="faq-line"></div>
                 </div>
             </div>
+            </Toggle>
+            <Toggle> 
             <div className="question">
                 <h4>Payment methods</h4>
                 <div className="answer">
@@ -36,7 +43,10 @@ const FaqSection = () => {
                     </p>
                     <div className="faq-line"></div>
                 </div>
-            </div><div className="question">
+            </div>
+            </Toggle>
+            <Toggle> 
+            <div className="question">
                 <h4>What products do you offer</h4>
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -46,6 +56,7 @@ const FaqSection = () => {
                     <div className="faq-line"></div>
                 </div>
             </div>
+            </Toggle>
         </StyledFaq>
     )
 };
